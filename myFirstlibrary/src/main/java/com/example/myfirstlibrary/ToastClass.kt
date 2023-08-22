@@ -1,5 +1,6 @@
 package com.example.myfirstlibrary
 
+import android.app.Activity
 import android.content.Context
 import android.widget.Toast
 
@@ -10,7 +11,7 @@ import android.widget.Toast
  *      -> https://stackoverflow.com/users/17921670/kamran-khan
  */
 object ToastClass {
-    fun  showToast(context:Context,string:String){
-        Toast.makeText(context, string, Toast.LENGTH_SHORT).show()
+    fun Activity.showToast(string:String){
+        Toast.makeText(this, string, Toast.LENGTH_SHORT).show()
     }
 }
